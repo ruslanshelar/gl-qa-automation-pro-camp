@@ -1,3 +1,5 @@
+package tasks;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
@@ -5,7 +7,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class firstTest {
+public class FirstHomeTask {
     WebDriver driver;
 
     @Before
@@ -15,14 +17,13 @@ public class firstTest {
     }
 
     @After
-    public void closeBrwoser(){
+    public void closeBrowser(){
         driver.quit();
     }
 
     @Test
     public void firstTestCase(){
         driver.get("https://www.google.com");
-
     }
 
 }
